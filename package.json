@@ -2,8 +2,9 @@
   "name": "hello-world-javascript-action",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build-goodbye": "ncc build -o dist/goodbye-world src/goodbye-world",
+    "build-hello": "ncc build -o dist/hello-world src/hello-world",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/ZeroTrepidation/hello-world-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.1"
+    "@actions/github": "^6.0.1",
+    "@vercel/ncc": "^0.38.3"
   }
 }
